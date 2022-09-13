@@ -1,0 +1,171 @@
+body {
+    background-color: #ffffff;
+}
+
+.navegacion {
+    background-color: #343D42;
+
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+}
+
+.links {
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.imagenFondo {
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+    opacity: .77;
+}
+
+.titulo {
+    font-size: 17px;
+    font-weight: bold;
+    color: #fefefe;
+}
+#textarea{
+    font-size: 25px;
+}
+
+.textoimagen {
+    position: absolute;
+    font-weight: bold;
+    color: #fefefe;
+    top: 280px;
+    text-align: left;
+    font-size: 12px;
+    width: 90%;
+    height: 30px;
+    display: flex;
+    right: 0;
+    justify-content: end;
+    flex-direction: column;
+
+
+}
+
+.boton {
+    background-color: #87cb47;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+.contenedorMedio {
+    background-color: #343D42;
+}
+
+
+.contenedorMedio,
+.seccion {
+    margin-top: 2rem;
+}
+
+.orador {
+    display: inline-block;
+    background-color: transparent;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fefefe;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    border-color: white;
+}
+
+.imagen {
+    width: 100%;
+    max-height: 500px;
+
+}
+
+.footer {
+    display: flex;
+    background-color: #0E3B46;
+    margin-top: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    font-size: 1rem;
+
+
+}
+
+@media screen and (min-width:768px) {
+    .titulo{
+        font-size: 26px;
+
+    }
+    .textoimagen {
+        margin-right: 20px;
+        width: 50%;
+        text-align: end;
+        top: 450px;
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (max-width:992px) {
+    .logo {
+        width: 70%;
+    }
+
+
+}
+
+@media screen and (min-width:992px) {
+    .contenedorMedio {
+        display: flex;
+        font-size: 20px;
+
+    }
+
+    .textoimagen {
+        top: 590px;
+        margin-right: 5rem;
+        width: 40%;
+    }
+
+    .footer {
+        flex-direction: row;
+
+        justify-content: space-evenly;
+
+        align-items: center;
+    }
+
+    .formulario {
+        display: flex;
+
+
+    }
+
+    #nombre {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    
+    .textoimagen{
+        top:700px;
+        margin-right: 150px;
+        widows: 30%;
+        
+
+        
+    }
+}
