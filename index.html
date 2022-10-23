@@ -21,11 +21,11 @@
 
         </div>
 
-        <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse links" id="collapsibleNavbar">
-          <ul class="navbar-nav" >
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#confe">La Conferencia</a>
             </li>
@@ -39,7 +39,7 @@
               <a class="nav-link" href="#orador">Conviértete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color:greenyellow;" href="#">Comprar Tickets</a>
+              <a class="nav-link" style="color:greenyellow;" href="#comprar">Comprar Tickets</a>
             </li>
 
           </ul>
@@ -152,8 +152,9 @@
     <div class="container  justify-content-center text-center seccion">
       <p>CONVIERTETE EN UN</p>
       <h2>ORADORES</h2>
-      
-      <p>Anótate como orador para dar una <span style="Text-decoration: dotted underline;">charla ignite.</span> Cuéntanos de qué quieres hablar!</p>
+
+      <p>Anótate como orador para dar una <span style="Text-decoration: dotted underline;">charla ignite.</span>
+        Cuéntanos de qué quieres hablar!</p>
       <div class="mb-3  formulario">
 
         <input type="text" class="form-control mt-3" id="nombre" placeholder="Nombre">
@@ -170,32 +171,144 @@
 
 
     </div>
+    <a id="comprar"></a>
+    <div class="container justify-content-center text-center ticket">
+
+      <div class="categoria justify-content-center text-center">
+        <div class="estudiante">
+          <p style="font-size:20px;"><strong>Estudiante</strong></p>
+          <p>Tiene un descuento</p>
+          <p><strong>80%</strong></p>
+          <p id="doc">*presentar documentación</p>
+        </div>
+        <div class="trainee">
+          <p style="font-size:20px;"><strong>Trainee</strong></p>
+          <p>Tiene un descuento</p>
+          <p><strong>50%</strong></p>
+          <p id="doc">*presentar documentación</p>
+        </div>
+        <div class="junior">
+          <p style="font-size:20px;"><strong>Junior</strong></p>
+          <p>Tiene un descuento</p>
+          <p><strong>15%</strong></p>
+          <p id="doc">*presentar documentación</p>
+        </div>
+
+
+      </div>
+      <div class="titulo-compra">
+        <p>venta</p>
+        <h3>VALOR DEL TICKET $200</h3>
+      </div>
+
+      <!--------FORMULARIO-->
+      <form class="form container justify-content-center" id="formulario">
+        <div class="textos">
+          <div class="input-texto formulario__grupo-input" id="grupo__nombre">
+            <p class="formulario__input-error">solo Letras</p>
+            <input type="text" placeholder="nombre"  name="nombre" class="input-48 formulario__input" >
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            
+          </div>
+          
+          <div class="input-texto formulario__grupo-input" id="grupo__apellido">
+            <p class="formulario__input-error">solo letras</p>
+            <input type="text" placeholder="apellido" name="apellido"class="input-48 formulario__input" >
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+           
+          </div>
+
+
+        </div>
+        <div id="grupo__correo"  class="formulario__grupo-input">
+          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.
+          </p>
+          <input type="email" placeholder="correo@correo.com" name="correo"class="input-100 formulario__input" >
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          
+
+        </div>
+        
+       
+
+        <div class="textos">
+
+
+          <div class="input-box formulario__grupo-input" id="grupo__cantidad">
+            <label for="cantidad">Cantidad</label>
+            <p class="formulario__input-error">solo numeros positivos</p>
+            <input type="text" placeholder="cantidad" name="cantidad" id="inputcantidad" class="formulario__input">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            
+          </div>
+          <div class="input-box">
+            <label for="categSeleccion">Categoria</label>
+
+            <select name="categSeleccion" id="seleccion">
+              <option value="estudiante">Estudiante</option>
+              <option value="trainee">Trainee</option>
+              <option value="junior">Junior</option>
+
+            </select>
+
+          </div>
+
+
+
+
+        </div>
+
+        <p id="rtadoPagar">Total a Pagar: $</p>
+
+        <div class="formulario__mensaje " id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+        <div class="contebotones">
+          <button id="btnBorrar" onclick="resetearForm()">Borrar</button>
+          <button type="submit" id="btnResumen">Resumen</button>
+          
+
+        </div>
+        
+
+
+
+
+      </form>
+    </div>
+
+
+
+
   </main>
-  
-<footer class="text-white">
-  <div class="container-fluid footer">
+
+  <footer class="text-white">
+    <div class="container-fluid footer">
 
 
 
-    <p>Preguntas frecuentes</p>
-    <p>Contactanos</p>
-    <p>Prensa</p>
-    <p>Conferencias</p>
-    <p>Terminos y condiciones</p>
-    <p>Privacidad</p>
-    <p>Estudiantes</p>
+      <p>Preguntas frecuentes</p>
+      <p>Contactanos</p>
+      <p>Prensa</p>
+      <p>Conferencias</p>
+      <p>Terminos y condiciones</p>
+      <p>Privacidad</p>
+      <p>Estudiantes</p>
 
 
 
 
-  </div>
+    </div>
 
 
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 </body>
 

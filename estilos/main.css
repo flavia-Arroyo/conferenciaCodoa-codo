@@ -101,11 +101,170 @@ body {
 
 
 }
+.categoria{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+    
+  
+    
+
+.estudiante, .trainee, .junior{
+      padding: 1rem 2rem;
+      margin-right: .4rem;
+
+}
+.estudiante{
+    border:solid 1px #007bfe;
+}
+.trainee{
+    border:solid 1px #00a3b4;
+}
+.junior{
+    border:solid 1px #ffbf00;
+
+}
+#doc{
+    font-size: 12px;
+    color:#8d878a
+}
+
+.form{
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
+.conte-input-box{
+    display: flex;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.ticket{
+    margin-top: 80px;
+}
+.input-48, .input-100, #seleccion{
+    width: 100%;
+    margin-bottom: 1rem;
+ 
+}
+label{
+    text-align: left;
+}
+#seleccion{
+    padding:2px  0 2px 0;
+   
+}
+#rtadoPagar{
+    background-color: #c8e7ff;
+    text-align: left;
+    padding:1rem;
+}
+.contebotones{
+    display: flex;
+}
+#btnBorrar,#btnResumen{
+   
+    width: 50%;
+    background-color: #87cb47;
+    color:#ffffff;
+   
+    padding: .5rem 1rem;
+    border: transparent;
+}
+#btnResumen{
+    margin-left: 1rem;
+}
+
+.formulario__input p{
+    margin: 0;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+    color: #bb2929;
+	display: none;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+.formulario__grupo-input{
+    position: relative;
+
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 22px;
+	z-index: 100;
+	font-size: 16px;
+    opacity: 0;
+	
+}
+#inputcantidad{
+    margin-bottom: .8rem;
+}
+
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+    margin-bottom: 2rem;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+
+
+@media screen  and (max-width:700px){
+    .form{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
 
 @media screen and (min-width:768px) {
     .titulo{
         font-size: 26px;
 
+    }
+    .form{
+        max-width: 650px;
+        
     }
     .textoimagen {
         margin-right: 20px;
@@ -114,6 +273,16 @@ body {
         top: 450px;
         font-size: 16px;
     }
+   .input-box{
+    
+    text-align: left;
+   }
+   .textos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px
+   }
+   
 
 }
 
@@ -163,9 +332,10 @@ body {
     .textoimagen{
         top:700px;
         margin-right: 150px;
-        widows: 30%;
+       
         
 
         
     }
 }
+
